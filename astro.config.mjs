@@ -1,25 +1,32 @@
-import { defineConfig } from 'astro/config';
-import starlight from '@astrojs/starlight';
+import { defineConfig } from "astro/config";
+import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: "NanoPack",
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: "https://github.com/nanopack-buffer",
 			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: "Introduction",
+					autogenerate: { directory: "introduction" },
+				},
+				{
+					label: "Guides",
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: "Getting Started", slug: "guides/getting-started" },
+						{ label: "Defining a Message", slug: "guides/defining-message" },
+						{ label: "Defining an Enum", slug: "guides/defining-enum" },
+						{ label: "Data Types", slug: "guides/data-types" },
+						{ label: "Generating Code", slug: "guides/generating-code" },
 					],
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: "Binary Format",
+					autogenerate: { directory: "binary-format" },
 				},
 			],
 		}),

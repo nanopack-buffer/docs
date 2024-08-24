@@ -1,36 +1,28 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: NanoPack
+description: Homepage for NanoPack
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
+  tagline: A lightweight, effortless binary serialization format for C++, Swift, TypeScript, and more to come.
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Get started
+      link: /introduction
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
-
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+<CardGrid>
+	<Card title="Optimized for read/write performance" icon="rocket">
+		While NanoPack is not the most space efficient, it is optimized for serialization/deserialization speed, making it faster than popular serialization formats, such as Protobuf.
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="Easy schema syntax" icon="document">
+		NanoPack schema is designed to be easy to read and write. No more field numbers or import statements!
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="RPC" icon="puzzle">
+		NanoPack has built-in support for RPC. Define your RPC services in NanoPack schemas, and NanoPack will generate the glue code for setting up RPC clients and servers.
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Work in progress!" icon="warning">
+		NanoPack is still a work-in-progress, so expect rough edges, and please don't hesitate to report any issue you come across!
 	</Card>
 </CardGrid>
