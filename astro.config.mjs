@@ -22,6 +22,7 @@ export default defineConfig({
 						{ label: "Defining an Enum", slug: "guides/defining-enum" },
 						{ label: "Data Types", slug: "guides/data-types" },
 						{ label: "Generating Code", slug: "guides/generating-code" },
+						{ label: "RPC", slug: "guides/rpc" },
 					],
 				},
 				{
